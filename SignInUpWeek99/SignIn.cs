@@ -42,8 +42,7 @@ namespace SignInUpWeek99
             MUser user = new MUser(username, password);
             MUser validUser = MUserDL.SignIn(user);
             if(validUser != null)
-            {
-                /*MessageBox.Show("User is Valid ");*/
+            {               
                 Form moreForm = new AdminCheck();
                 moreForm.Show();             
 

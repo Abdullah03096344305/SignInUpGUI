@@ -36,6 +36,7 @@ namespace SignInUpWeek99
             this.radioButtonAdmin = new System.Windows.Forms.RadioButton();
             this.radioButtonCustomer = new System.Windows.Forms.RadioButton();
             this.backButton = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label4
@@ -98,7 +99,6 @@ namespace SignInUpWeek99
             this.radioButtonAdmin.Name = "radioButtonAdmin";
             this.radioButtonAdmin.Size = new System.Drawing.Size(87, 28);
             this.radioButtonAdmin.TabIndex = 14;
-            this.radioButtonAdmin.TabStop = true;
             this.radioButtonAdmin.Text = "Admin";
             this.radioButtonAdmin.UseVisualStyleBackColor = true;
             this.radioButtonAdmin.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
@@ -112,15 +112,15 @@ namespace SignInUpWeek99
             this.radioButtonCustomer.Name = "radioButtonCustomer";
             this.radioButtonCustomer.Size = new System.Drawing.Size(115, 28);
             this.radioButtonCustomer.TabIndex = 15;
-            this.radioButtonCustomer.TabStop = true;
             this.radioButtonCustomer.Text = "Customer";
             this.radioButtonCustomer.UseVisualStyleBackColor = true;
+            this.radioButtonCustomer.CheckedChanged += new System.EventHandler(this.radioButtonCustomer_CheckedChanged);
             // 
             // backButton
             // 
             this.backButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.backButton.ForeColor = System.Drawing.Color.Maroon;
-            this.backButton.Location = new System.Drawing.Point(351, 436);
+            this.backButton.Location = new System.Drawing.Point(279, 436);
             this.backButton.Name = "backButton";
             this.backButton.Size = new System.Drawing.Size(113, 23);
             this.backButton.TabIndex = 16;
@@ -129,11 +129,25 @@ namespace SignInUpWeek99
             this.backButton.UseVisualStyleBackColor = true;
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
+            // btnNext
+            // 
+            this.btnNext.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNext.ForeColor = System.Drawing.Color.Maroon;
+            this.btnNext.Location = new System.Drawing.Point(415, 436);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(113, 23);
+            this.btnNext.TabIndex = 17;
+            this.btnNext.Text = "Next";
+            this.btnNext.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
             // AdminCheck
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(863, 471);
+            this.Controls.Add(this.btnNext);
             this.Controls.Add(this.backButton);
             this.Controls.Add(this.radioButtonCustomer);
             this.Controls.Add(this.radioButtonAdmin);
@@ -157,5 +171,6 @@ namespace SignInUpWeek99
         private System.Windows.Forms.RadioButton radioButtonAdmin;
         private System.Windows.Forms.RadioButton radioButtonCustomer;
         private System.Windows.Forms.Button backButton;
+        private System.Windows.Forms.Button btnNext;
     }
 }
