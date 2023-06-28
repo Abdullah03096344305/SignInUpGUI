@@ -86,6 +86,12 @@
     <Compile Include="SignUp.Designer.cs">
       <DependentUpon>SignUp.cs</DependentUpon>
     </Compile>
+    <Compile Include="SmashFeedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SmashFeedForm.Designer.cs">
+      <DependentUpon>SmashFeedForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SmashFeedForm.resx">
+      <DependentUpon>SmashFeedForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserMenu.resx">
       <DependentUpon>UserMenu.cs</DependentUpon>

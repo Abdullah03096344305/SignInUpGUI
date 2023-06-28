@@ -88,15 +88,17 @@ namespace SignInUpWeek99
             // 
             // BurgerListBox
             // 
+            this.BurgerListBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.BurgerListBox.Font = new System.Drawing.Font("Wide Latin", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BurgerListBox.ForeColor = System.Drawing.Color.Maroon;
             this.BurgerListBox.FormattingEnabled = true;
             this.BurgerListBox.ItemHeight = 15;
             this.BurgerListBox.Items.AddRange(new object[] {
             "Zinger Burger",
             "Double Patty"});
-            this.BurgerListBox.Location = new System.Drawing.Point(31, 242);
+            this.BurgerListBox.Location = new System.Drawing.Point(12, 200);
             this.BurgerListBox.Name = "BurgerListBox";
-            this.BurgerListBox.Size = new System.Drawing.Size(174, 199);
+            this.BurgerListBox.Size = new System.Drawing.Size(206, 242);
             this.BurgerListBox.TabIndex = 17;
             // 
             // textBox1
