@@ -22,8 +22,7 @@ namespace SignInUpWeek99
         private void CLearDataFromForm()
         {
             usernameText.Text = "";
-            passwordText.Text = "";
-            roleText.Text = "";
+            passwordText.Text = "";           
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -34,10 +33,9 @@ namespace SignInUpWeek99
         private void button1_Click(object sender, EventArgs e)
         {
             string username = usernameText.Text;
-            string password = passwordText.Text;
-            string role = roleText.Text;
+            string password = passwordText.Text;            
             string path = "data.txt";
-            MUser user = new MUser(username, password, role);
+            MUser user = new MUser(username, password);
             MUserDL.AddUserIntoList(user);
             MUserDL.StoreUserIntoFile(user, path);
             MessageBox.Show("User Added SuccessFully");
@@ -53,5 +51,7 @@ namespace SignInUpWeek99
         {
 
         }
+
+       
     }
 }

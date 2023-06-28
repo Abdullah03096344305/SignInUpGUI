@@ -15,8 +15,7 @@ namespace SignInUpWeek99
         /// </summary>
         [STAThread]
         static void Main()
-        {
-             int adminKey = 555;  
+        {          
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new SignInSignUpApplication());

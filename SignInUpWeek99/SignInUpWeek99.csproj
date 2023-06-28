@@ -59,6 +59,12 @@
       <DependentUpon>AdminKeyChecked.cs</DependentUpon>
     </Compile>
     <Compile Include="BL\MUser.cs" />
+    <Compile Include="BurgerMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BurgerMenu.Designer.cs">
+      <DependentUpon>BurgerMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="DL\MUserDL.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -91,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AdminKeyChecked.resx">
       <DependentUpon>AdminKeyChecked.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BurgerMenu.resx">
+      <DependentUpon>BurgerMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

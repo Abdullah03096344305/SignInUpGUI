@@ -28,8 +28,7 @@ namespace SignInUpWeek99
 
         private void radioButtonCustomer_CheckedChanged(object sender, EventArgs e)
         {           
-        }
-        
+        }        
         private void btnNext_Click(object sender, EventArgs e)
         {
             if (radioButtonAdmin.Checked)

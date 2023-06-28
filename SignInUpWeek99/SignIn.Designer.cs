@@ -67,7 +67,7 @@ namespace SignInUpWeek99
             // usernameText
             // 
             this.usernameText.Location = new System.Drawing.Point(253, 295);
-            this.usernameText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.usernameText.Margin = new System.Windows.Forms.Padding(4);
             this.usernameText.Name = "usernameText";
             this.usernameText.Size = new System.Drawing.Size(383, 26);
             this.usernameText.TabIndex = 4;
@@ -76,7 +76,7 @@ namespace SignInUpWeek99
             // passwordText
             // 
             this.passwordText.Location = new System.Drawing.Point(253, 362);
-            this.passwordText.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.passwordText.Margin = new System.Windows.Forms.Padding(4);
             this.passwordText.Name = "passwordText";
             this.passwordText.Size = new System.Drawing.Size(383, 26);
             this.passwordText.TabIndex = 5;
@@ -84,7 +84,7 @@ namespace SignInUpWeek99
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(189, 491);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(131, 24);
             this.button1.TabIndex = 6;
@@ -96,7 +96,7 @@ namespace SignInUpWeek99
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(658, 491);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(131, 24);
             this.button2.TabIndex = 7;
@@ -110,19 +110,20 @@ namespace SignInUpWeek99
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Magneto", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label1.Location = new System.Drawing.Point(613, 117);
+            this.label1.Location = new System.Drawing.Point(437, 105);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(287, 58);
             this.label1.TabIndex = 8;
             this.label1.Text = "California";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Monotype Corsiva", 48F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Maroon;
-            this.label4.Location = new System.Drawing.Point(103, 15);
+            this.label4.Location = new System.Drawing.Point(34, 9);
             this.label4.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(393, 79);
@@ -148,7 +149,7 @@ namespace SignInUpWeek99
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(1200, 529);
+            this.ClientSize = new System.Drawing.Size(885, 529);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
@@ -160,7 +161,7 @@ namespace SignInUpWeek99
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.DarkRed;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SignIn";
             this.Text = "SignIn";
             this.ResumeLayout(false);

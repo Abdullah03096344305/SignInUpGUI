@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace SignInUpWeek99
 {
-    public partial class UserMenu : Form
+    public partial class BurgerMenu : Form
     {
-        public UserMenu()
+        public BurgerMenu()
         {
             InitializeComponent();
         }
 
-        private void labelBurger_Click(object sender, EventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
-            Form moreForm = new BurgerMenu();
-            moreForm.Show();
+           string text = textBox1.Text;
+            BurgerListBox.Items.Add(text);
         }
     }
 }

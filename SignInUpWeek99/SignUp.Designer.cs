@@ -31,10 +31,8 @@ namespace SignInUpWeek99
         {
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.usernameText = new System.Windows.Forms.TextBox();
             this.passwordText = new System.Windows.Forms.TextBox();
-            this.roleText = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -46,7 +44,7 @@ namespace SignInUpWeek99
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(103, 238);
+            this.label2.Location = new System.Drawing.Point(103, 270);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(81, 19);
             this.label2.TabIndex = 3;
@@ -56,43 +54,25 @@ namespace SignInUpWeek99
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(103, 304);
+            this.label3.Location = new System.Drawing.Point(103, 356);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(72, 19);
             this.label3.TabIndex = 4;
             this.label3.Text = "Password";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(136, 374);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(37, 19);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Roll";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
             // usernameText
             // 
-            this.usernameText.Location = new System.Drawing.Point(225, 238);
+            this.usernameText.Location = new System.Drawing.Point(225, 267);
             this.usernameText.Name = "usernameText";
             this.usernameText.Size = new System.Drawing.Size(348, 22);
             this.usernameText.TabIndex = 6;
             // 
             // passwordText
             // 
-            this.passwordText.Location = new System.Drawing.Point(225, 304);
+            this.passwordText.Location = new System.Drawing.Point(225, 353);
             this.passwordText.Name = "passwordText";
             this.passwordText.Size = new System.Drawing.Size(348, 22);
             this.passwordText.TabIndex = 7;
-            // 
-            // roleText
-            // 
-            this.roleText.Location = new System.Drawing.Point(225, 369);
-            this.roleText.Name = "roleText";
-            this.roleText.Size = new System.Drawing.Size(348, 22);
-            this.roleText.TabIndex = 8;
             // 
             // button2
             // 
@@ -145,11 +125,11 @@ namespace SignInUpWeek99
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DarkRed;
-            this.label6.Location = new System.Drawing.Point(100, 183);
+            this.label6.Location = new System.Drawing.Point(122, 168);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(166, 19);
+            this.label6.Size = new System.Drawing.Size(250, 26);
             this.label6.TabIndex = 13;
             this.label6.Text = "A Taste you\'ll Remeber";
             this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -164,10 +144,8 @@ namespace SignInUpWeek99
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.roleText);
             this.Controls.Add(this.passwordText);
             this.Controls.Add(this.usernameText);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -183,10 +161,8 @@ namespace SignInUpWeek99
         #endregion
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox usernameText;
         private System.Windows.Forms.TextBox passwordText;
-        private System.Windows.Forms.TextBox roleText;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;

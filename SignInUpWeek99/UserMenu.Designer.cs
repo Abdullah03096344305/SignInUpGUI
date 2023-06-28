@@ -90,6 +90,7 @@ namespace SignInUpWeek99
             this.labelBurger.Size = new System.Drawing.Size(73, 24);
             this.labelBurger.TabIndex = 15;
             this.labelBurger.Text = "Burger";
+            this.labelBurger.Click += new System.EventHandler(this.labelBurger_Click);
             // 
             // labelDeals
             // 

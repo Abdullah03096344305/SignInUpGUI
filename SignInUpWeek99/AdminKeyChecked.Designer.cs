@@ -56,7 +56,7 @@ namespace SignInUpWeek99
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Magneto", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label1.Location = new System.Drawing.Point(400, 130);
+            this.label1.Location = new System.Drawing.Point(400, 110);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(287, 58);
@@ -68,7 +68,7 @@ namespace SignInUpWeek99
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkRed;
-            this.label5.Location = new System.Drawing.Point(68, 218);
+            this.label5.Location = new System.Drawing.Point(67, 200);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(250, 26);
@@ -116,9 +116,10 @@ namespace SignInUpWeek99
             // 
             // txtAdminCheck
             // 
-            this.txtAdminCheck.Location = new System.Drawing.Point(219, 310);
+            this.txtAdminCheck.Location = new System.Drawing.Point(225, 303);
+            this.txtAdminCheck.Multiline = true;
             this.txtAdminCheck.Name = "txtAdminCheck";
-            this.txtAdminCheck.Size = new System.Drawing.Size(176, 20);
+            this.txtAdminCheck.Size = new System.Drawing.Size(278, 27);
             this.txtAdminCheck.TabIndex = 18;
             this.txtAdminCheck.TextChanged += new System.EventHandler(this.txtAdminCheck_TextChanged);
             // 

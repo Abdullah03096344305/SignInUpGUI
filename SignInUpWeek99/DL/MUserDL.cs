@@ -52,9 +52,8 @@ namespace SignInUpWeek99.DL
                 while ((record = fileVariable.ReadLine()) != null)
                 {
                     string userName = ParseData(record, 1);
-                    string userPassword = ParseData(record, 2);
-                    string userRole = ParseData(record, 3);
-                    MUser user = new MUser(userName, userPassword, userRole);
+                    string userPassword = ParseData(record, 2);                  
+                    MUser user = new MUser(userName, userPassword);
                     AddUserIntoList(user);
                 }
                 fileVariable.Close();
@@ -66,7 +65,7 @@ namespace SignInUpWeek99.DL
         public static void StoreUserIntoFile(MUser user,string path)
         {
             StreamWriter file = new StreamWriter(path, true);
-            file.WriteLine(user.GetUserName() + "," + user.GetUserPassword() + "," + user.GetUserRoll());
+            file.WriteLine(user.GetUserName() + "," + user.GetUserPassword());
             file.Flush();
             file.Close();     
         }
