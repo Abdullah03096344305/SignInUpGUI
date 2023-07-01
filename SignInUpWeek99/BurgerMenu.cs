@@ -29,20 +29,16 @@ namespace SignInUpWeek99
 
         }
 
-        private void Readbtn_Click(object sender, EventArgs e)
-        {
-        }
-
+       
         private void BurgerMenu_Load(object sender, EventArgs e)
         {
             string burgerPath = "burgerFile.txt";
             BurgerDL.ReadBurgerFile(burgerPath, BurgerListView);
         }
-        private void BurgerListView_SelectedIndexChanged(object sender, EventArgs e)
+        public void BurgerListView_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (BurgerListView.SelectedItems.Count > 0)
-            {
-               
+            {               
                 foreach (ListViewItem selectedItem in BurgerListView.SelectedItems)
                 {
                     int price;
@@ -54,7 +50,9 @@ namespace SignInUpWeek99
                     }
                 }
                 textBoxTotalPrice.Text = totalPrice.ToString();
+               
             }
+          
         }
 
         private void textBoxTotalPrice_TextChanged(object sender, EventArgs e)

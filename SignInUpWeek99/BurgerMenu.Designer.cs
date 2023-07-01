@@ -90,11 +90,11 @@ namespace SignInUpWeek99
             this.BurgerListView.HideSelection = false;
             this.BurgerListView.Location = new System.Drawing.Point(12, 141);
             this.BurgerListView.Name = "BurgerListView";
-            this.BurgerListView.Size = new System.Drawing.Size(398, 275);
+            this.BurgerListView.Size = new System.Drawing.Size(398, 297);
             this.BurgerListView.Sorting = System.Windows.Forms.SortOrder.Ascending;
             this.BurgerListView.TabIndex = 20;
             this.BurgerListView.UseCompatibleStateImageBehavior = false;
-            this.BurgerListView.View = System.Windows.Forms.View.Details;
+            this.BurgerListView.View = System.Windows.Forms.View.Details;          
             this.BurgerListView.SelectedIndexChanged += new System.EventHandler(this.BurgerListView_SelectedIndexChanged);
             // 
             // Burger_Names

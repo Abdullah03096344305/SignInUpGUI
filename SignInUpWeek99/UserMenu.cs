@@ -22,5 +22,11 @@ namespace SignInUpWeek99
             Form moreForm = new BurgerMenu();
             moreForm.Show();
         }
+
+        private void labelDeals_Click(object sender, EventArgs e)
+        {
+            Form moreForm = new DealMenu();
+            moreForm.Show();
+        }
     }
 }

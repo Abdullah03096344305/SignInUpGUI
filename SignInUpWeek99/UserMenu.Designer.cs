@@ -102,6 +102,7 @@ namespace SignInUpWeek99
             this.labelDeals.Size = new System.Drawing.Size(148, 24);
             this.labelDeals.TabIndex = 16;
             this.labelDeals.Text = "Exclusive Deals";
+            this.labelDeals.Click += new System.EventHandler(this.labelDeals_Click);
             // 
             // labelBill
             // 

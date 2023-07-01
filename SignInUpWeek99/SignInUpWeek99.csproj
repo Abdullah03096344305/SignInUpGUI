@@ -58,6 +58,12 @@
     <Compile Include="AdminKeyChecked.Designer.cs">
       <DependentUpon>AdminKeyChecked.cs</DependentUpon>
     </Compile>
+    <Compile Include="BillMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillMenu.Designer.cs">
+      <DependentUpon>BillMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="BL\Burger.cs" />
     <Compile Include="BL\Deals.cs" />
     <Compile Include="BL\MUser.cs" />
@@ -66,6 +72,12 @@
     </Compile>
     <Compile Include="BurgerMenu.Designer.cs">
       <DependentUpon>BurgerMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DealMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DealMenu.Designer.cs">
+      <DependentUpon>DealMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="DL\BurgerDL.cs" />
     <Compile Include="DL\DealDL.cs" />
@@ -108,8 +120,14 @@
     <EmbeddedResource Include="AdminKeyChecked.resx">
       <DependentUpon>AdminKeyChecked.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BillMenu.resx">
+      <DependentUpon>BillMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="BurgerMenu.resx">
       <DependentUpon>BurgerMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DealMenu.resx">
+      <DependentUpon>DealMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
