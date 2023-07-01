@@ -111,6 +111,7 @@ namespace SignInUpWeek99
             this.label3.TabIndex = 5;
             this.label3.Text = "A Taste you\'ll Remeber";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // SignInSignUpApplication
             // 

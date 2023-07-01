@@ -32,9 +32,13 @@ namespace SignInUpWeek99
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.BurgerListBox = new System.Windows.Forms.ListBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.BurgerListView = new System.Windows.Forms.ListView();
+            this.Burger_Names = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Burger_Prices = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.textBoxTotalPrice = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBoxQuantity = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label4
@@ -67,7 +71,7 @@ namespace SignInUpWeek99
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkRed;
-            this.label5.Location = new System.Drawing.Point(93, 161);
+            this.label5.Location = new System.Drawing.Point(49, 112);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(250, 26);
@@ -75,52 +79,83 @@ namespace SignInUpWeek99
             this.label5.Text = "A Taste you\'ll Remeber";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // btnAdd
+            // BurgerListView
             // 
-            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.Location = new System.Drawing.Point(356, 379);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
-            this.btnAdd.TabIndex = 16;
-            this.btnAdd.Text = "Add Item";
-            this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.BurgerListView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.BurgerListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Burger_Names,
+            this.Burger_Prices});
+            this.BurgerListView.Font = new System.Drawing.Font("Poor Richard", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BurgerListView.ForeColor = System.Drawing.Color.Maroon;
+            this.BurgerListView.HideSelection = false;
+            this.BurgerListView.Location = new System.Drawing.Point(12, 141);
+            this.BurgerListView.Name = "BurgerListView";
+            this.BurgerListView.Size = new System.Drawing.Size(398, 275);
+            this.BurgerListView.Sorting = System.Windows.Forms.SortOrder.Ascending;
+            this.BurgerListView.TabIndex = 20;
+            this.BurgerListView.UseCompatibleStateImageBehavior = false;
+            this.BurgerListView.View = System.Windows.Forms.View.Details;
+            this.BurgerListView.SelectedIndexChanged += new System.EventHandler(this.BurgerListView_SelectedIndexChanged);
             // 
-            // BurgerListBox
+            // Burger_Names
             // 
-            this.BurgerListBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.BurgerListBox.Font = new System.Drawing.Font("Wide Latin", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BurgerListBox.ForeColor = System.Drawing.Color.Maroon;
-            this.BurgerListBox.FormattingEnabled = true;
-            this.BurgerListBox.ItemHeight = 15;
-            this.BurgerListBox.Items.AddRange(new object[] {
-            "Zinger Burger",
-            "Double Patty"});
-            this.BurgerListBox.Location = new System.Drawing.Point(12, 200);
-            this.BurgerListBox.Name = "BurgerListBox";
-            this.BurgerListBox.Size = new System.Drawing.Size(206, 242);
-            this.BurgerListBox.TabIndex = 17;
+            this.Burger_Names.Text = "Burger Names";
+            this.Burger_Names.Width = 200;
             // 
-            // textBox1
+            // Burger_Prices
             // 
-            this.textBox1.Location = new System.Drawing.Point(303, 261);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(181, 20);
-            this.textBox1.TabIndex = 18;
+            this.Burger_Prices.Text = "Burger Prices";
+            this.Burger_Prices.Width = 100;
+            // 
+            // textBoxTotalPrice
+            // 
+            this.textBoxTotalPrice.Location = new System.Drawing.Point(574, 276);
+            this.textBoxTotalPrice.Name = "textBoxTotalPrice";
+            this.textBoxTotalPrice.Size = new System.Drawing.Size(165, 20);
+            this.textBoxTotalPrice.TabIndex = 21;
+            this.textBoxTotalPrice.TextChanged += new System.EventHandler(this.textBoxTotalPrice_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(467, 283);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(58, 13);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Total Price";
+            // 
+            // textBoxQuantity
+            // 
+            this.textBoxQuantity.Location = new System.Drawing.Point(574, 186);
+            this.textBoxQuantity.Name = "textBoxQuantity";
+            this.textBoxQuantity.Size = new System.Drawing.Size(165, 20);
+            this.textBoxQuantity.TabIndex = 23;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(467, 189);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 13);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "Quantity";
             // 
             // BurgerMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.BurgerListBox);
-            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.textBoxQuantity);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.textBoxTotalPrice);
+            this.Controls.Add(this.BurgerListView);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
             this.Name = "BurgerMenu";
             this.Text = "BurgerMenu";
+            this.Load += new System.EventHandler(this.BurgerMenu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,8 +166,12 @@ namespace SignInUpWeek99
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.ListBox BurgerListBox;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ListView BurgerListView;
+        private System.Windows.Forms.ColumnHeader Burger_Names;
+        private System.Windows.Forms.ColumnHeader Burger_Prices;
+        private System.Windows.Forms.TextBox textBoxTotalPrice;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBoxQuantity;
+        private System.Windows.Forms.Label label3;
     }
 }

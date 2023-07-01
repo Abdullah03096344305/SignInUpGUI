@@ -8,7 +8,6 @@ using System.Text;
 using System.IO;
 using SignInUpWeek99.DL;
 using SignInUpWeek99.BL;
-/*using SignInUpWeek99.IO;*/
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -58,6 +57,11 @@ namespace SignInUpWeek99
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
