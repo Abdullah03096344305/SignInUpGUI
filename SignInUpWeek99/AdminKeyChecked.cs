@@ -36,11 +36,7 @@ namespace SignInUpWeek99
 
         private void txtAdminCheck_TextChanged(object sender, EventArgs e)
         {
-           
-           
-           
-           
-           
+          
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -55,6 +51,11 @@ namespace SignInUpWeek99
                 MessageBox.Show("Admin Key is Inalid");
             }
             CLearDataFromForm();
+        }
+
+        private void txtAdminCheck_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            
         }
     }
 }

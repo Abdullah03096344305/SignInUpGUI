@@ -14,14 +14,17 @@ namespace SignInUpWeek99
 {
     public partial class DealMenu : Form
     {
-        private int dealtotalPrice = 0;
+        private int dealtotalPrice = 0;      
         public DealMenu()
         {
             InitializeComponent();
-
+         
+        }
+        public int GetDealPrice()
+        {
+            return dealtotalPrice;
         }
 
-       
 
         private void textBoxQuantity_TextChanged(object sender, EventArgs e)
         {
@@ -48,7 +51,7 @@ namespace SignInUpWeek99
                         dealtotalPrice += itemTotal;
                     }
                 }
-                textBoxTotalPrice.Text = dealtotalPrice.ToString();
+                textBoxTotalPrice.Text = GetDealPrice().ToString();               
             }           
         }
 

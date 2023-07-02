@@ -14,6 +14,17 @@ namespace SignInUpWeek99
 {
     public partial class BillMenu : Form
     {
+        private int burgerTotal;
+        private int dealTotal;
+        public void UpdateBurgerTotal(int total)
+        {
+            burgerTotal = total;
+        }
+
+        public void UpdateDealTotal(int total)
+        {
+            dealTotal = total;
+        }
         public BillMenu()
         {
             InitializeComponent();
@@ -28,10 +39,12 @@ namespace SignInUpWeek99
         {
             this.Close();
         }
-
+        
         private void textBoxBill_TextChanged(object sender, EventArgs e)
         {
-
+            int sum = burgerTotal + dealTotal;
+            textBoxBill.Text = sum.ToString();
         }
+
     }
 }

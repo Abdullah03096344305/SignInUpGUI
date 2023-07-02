@@ -63,5 +63,35 @@ namespace SignInUpWeek99
         {
 
         }
+
+        private void usernameText_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                passwordText.Focus();
+            }
+        }
+
+        private void passwordText_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {           
+            string username = usernameText.Text;
+            string password = passwordText.Text;
+            MUser user = new MUser(username, password);
+            MUser validUser = MUserDL.SignIn(user);
+            if (validUser != null)
+            {
+                Form moreForm = new AdminCheck();
+                moreForm.Show();
+
+            }
+            else
+            {
+                MessageBox.Show("User is Invalid ");
+            }
+            CLearDataFromForm();
+        }
+        }
     }
 }

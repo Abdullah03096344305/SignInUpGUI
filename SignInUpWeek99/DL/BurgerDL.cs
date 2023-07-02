@@ -11,6 +11,7 @@ namespace SignInUpWeek99.DL
 {
     class BurgerDL
     {
+
         public static List<Burger> burgers = new List<Burger>();
         public static void AddBurgerIntoList(Burger burger, ListView listView)
         {

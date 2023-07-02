@@ -12,6 +12,7 @@ namespace SignInUpWeek99
 {
     public partial class UserMenu : Form
     {
+        private BillMenu billMenuForm;       
         public UserMenu()
         {
             InitializeComponent();

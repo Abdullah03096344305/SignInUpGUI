@@ -15,12 +15,21 @@ namespace SignInUpWeek99
     public partial class BurgerMenu : Form
     {
 
-        private int totalPrice = 0;
+        public int totalPrice ;       
+
         public BurgerMenu()
         {
-            InitializeComponent();         
-           
+            InitializeComponent();
+          
         }
+
+     
+
+        public int GetBurgerPrice()
+        {
+            return totalPrice;
+        }
+       
 
        
 
@@ -49,8 +58,8 @@ namespace SignInUpWeek99
                         totalPrice += itemTotal;
                     }
                 }
-                textBoxTotalPrice.Text = totalPrice.ToString();
-               
+                textBoxTotalPrice.Text = GetBurgerPrice().ToString();
+              
             }
           
         }

@@ -122,6 +122,7 @@ namespace SignInUpWeek99
             this.txtAdminCheck.Size = new System.Drawing.Size(278, 27);
             this.txtAdminCheck.TabIndex = 18;
             this.txtAdminCheck.TextChanged += new System.EventHandler(this.txtAdminCheck_TextChanged);
+            this.txtAdminCheck.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAdminCheck_KeyPress);
             // 
             // AdminKeyChecked
             // 

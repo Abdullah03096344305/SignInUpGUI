@@ -72,6 +72,7 @@ namespace SignInUpWeek99
             this.usernameText.Size = new System.Drawing.Size(383, 26);
             this.usernameText.TabIndex = 4;
             this.usernameText.TextChanged += new System.EventHandler(this.usernameText_TextChanged);
+            this.usernameText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.usernameText_KeyPress);
             // 
             // passwordText
             // 
@@ -80,6 +81,7 @@ namespace SignInUpWeek99
             this.passwordText.Name = "passwordText";
             this.passwordText.Size = new System.Drawing.Size(383, 26);
             this.passwordText.TabIndex = 5;
+            this.passwordText.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.passwordText_KeyPress);
             // 
             // button1
             // 
